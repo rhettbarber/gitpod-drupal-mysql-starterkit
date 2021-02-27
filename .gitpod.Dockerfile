@@ -3,6 +3,7 @@ FROM gitpod/workspace-mysql
 USER gitpod
 
 RUN sudo apt-get -q update && \
+    sudo apt-get install -y --no-install-recommends apt-utils && \
     sudo apt-get install -y tig && \
     sudo rm -rf /var/lib/apt/lists/*
 
