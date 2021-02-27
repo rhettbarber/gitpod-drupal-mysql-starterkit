@@ -1,7 +1,8 @@
-# FROM gitpod/workspace-mysql
+FROM gitpod/workspace-mysql
 
-# USER gitpod
+USER gitpod
 
+RUN sudo apt-get -q update
 # RUN sudo apt-get -q update && \
 #     sudo apt-get install -y --no-install-recommends apt-utils && \
 #     sudo apt-get install -y tig && \
